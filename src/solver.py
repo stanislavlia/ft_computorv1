@@ -5,7 +5,7 @@ def abs(x):
     return -x
 
 
-def sqrt(x, precision=1e-10):
+def sqrt(x, precision=1e-18):
     if x < 0:
         raise ValueError("Cannot calculate sqrt of negative number")
     if x == 0:
