@@ -43,7 +43,8 @@ class Solver():
         
         self.reduced_equation = reduced_equation
 
-    def _get_poly_degree(self, reduced_equation: dict):
+    @staticmethod
+    def _get_poly_degree(reduced_equation: dict):
         
         if not reduced_equation:
             return 0
